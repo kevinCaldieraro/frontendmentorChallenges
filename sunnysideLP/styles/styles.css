@@ -6,7 +6,7 @@
   --yellow: hsl(51, 100%, 49%);
   --dark-desaturated-cyan-graphic-design-text: hsl(167, 40%, 24%);
   --dark-blue-photography-text: hsl(198, 62%, 26%);
-  --dark-moderate-cyan-footer: hsl(168, 34%, 41%);
+  --dark-moderate-cyan-footer: #90d4c5;
 
   /* Neutral */
   --very-dark-desaturated-blue: hsl(212, 27%, 19%);
@@ -33,6 +33,10 @@ p {
   font-family: 'Barlow';
 }
 
+.logo img {
+  height: 35px;
+}
+
 .home {
   min-height: 800px;
   background-image: url('../assets/imgs/desktop/image-header.jpg');
@@ -49,10 +53,6 @@ p {
   padding: 3rem 2.5rem;
   display: flex;
   justify-content: space-between;
-}
-
-.home-header .logo img {
-  height: 35px;
 }
 
 .home-header nav ul {
@@ -78,6 +78,13 @@ p {
   border: none;
   border-radius: 40px;
   cursor: pointer;
+
+  transition: background 0.5s, color 0.2s;
+}
+
+.home-header nav ul .contact-button:hover {
+  background-color: #8ad8ff;
+  color: var(--white);
 }
 
 .home .title-home {
@@ -227,7 +234,7 @@ p {
   text-transform: uppercase;
   letter-spacing: 5px;
   color: var(--grayish-blue);
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .testimonials .testimonials-cards {
@@ -267,4 +274,77 @@ p {
 .testimonials .testimonials-cards .testimonial span.profession {
   font-family: 'Barlow';
   color: var(--grayish-blue);
+}
+
+.other-imgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.other-imgs img {
+  width: 100%;
+}
+
+footer {
+  background-color: var(--dark-moderate-cyan-footer);
+  padding: 4rem 0rem;
+  font-family: 'Barlow';
+  font-size: 1.125rem;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-container {
+  text-align: center;
+}
+
+.footer-container .logo {
+  margin-bottom: 2.25rem;
+}
+
+.footer-container .logo svg {
+  height: 35px;
+}
+
+.footer-container .logo svg path {
+  fill: #2a7362;
+}
+
+.footer-container nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5.65rem;
+}
+
+.footer-container nav ul {
+  display: flex;
+  gap: 3.5rem;
+  list-style: none;
+  align-items: center;
+}
+
+.footer-container nav ul a {
+  text-decoration: none;
+  color: #2a7362;
+  padding: 0.5rem;
+
+  transition: 0.3s;
+}
+
+.footer-container nav ul a:hover {
+  color: var(--white);
+}
+
+.footer-container nav ul.social-medias {
+  gap: 0.5rem;
+}
+
+.footer-container nav ul.social-medias img {
+  transition: 0.3s;
+}
+
+.footer-container nav ul.social-medias img:hover {
+  filter: brightness(0) invert(1);
 }
