@@ -1,0 +1,117 @@
+@media screen and (max-width: 1200px) {
+  .services div.services-content {
+    padding: 3rem 3rem;
+  }
+
+  .services div.other-services {
+    padding: 0rem 5rem 3rem 5rem;
+  }
+
+  .testimonials {
+    padding: 5rem;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .home-header nav {
+    width: calc(100vw - 5rem);
+    display: none;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: var(--white);
+    padding: 2.5rem 0rem 3.6rem 0rem;
+  }
+
+  .home-header nav.active {
+    display: block;
+  }
+
+  .home-header nav.active::before {
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 8px solid transparent;
+    border-right: 20px solid var(--white);
+    border-top: 20px solid transparent;
+    border-bottom: 7px solid var(--white);
+    right: 0;
+    top: -24px;
+  }
+
+  .home-header nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    list-style: none;
+    align-items: center;
+  }
+
+  .home-header nav ul a {
+    color: var(--dark-grayish-blue);
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .home-header nav ul .contact-button {
+    background-color: var(--yellow);
+    transition: 0s;
+  }
+
+  .home-header nav ul .contact-button:hover {
+    background-color: var(--yellow);
+    color: var(--very-dark-desaturated-blue);
+  }
+
+  .services {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .egg-image {
+    order: -1;
+  }
+
+  .services div.other-services {
+    padding: 0rem 2rem 3rem 2rem;
+  }
+
+  .testimonials {
+    padding: 5rem 10rem;
+  }
+
+  .testimonials .testimonials-cards {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 5rem;
+  }
+
+  .testimonials .testimonials-cards .testimonial img {
+    margin-bottom: 2rem;
+  }
+
+  .testimonials .testimonials-cards .testimonial p {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .home .title-home h1 {
+    font-size: 2.5rem;
+  }
+
+  .testimonials {
+    padding: 5rem 2rem;
+  }
+
+  .testimonials h2 {
+    font-size: 1rem;
+  }
+
+  .other-imgs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <script src="./src/index.js" defer></script>
     <title>Sunnyside</title>
   </head>
   <body>
@@ -15,7 +17,7 @@
             ><img src="./assets/imgs/logo.svg" alt="Logo Sunnyside"
           /></a>
         </div>
-        <nav>
+        <nav id="menu" class="">
           <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
@@ -23,6 +25,11 @@
             <li><a class="contact-button">Contact</a></li>
           </ul>
         </nav>
+        <div class="hamburger">
+          <button class="hamburger-btn">
+            <img src="./assets/imgs/icon-hamburger.svg" alt="menu" />
+          </button>
+        </div>
       </header>
 
       <div class="title-home">
@@ -44,7 +51,7 @@
           <a class="anchor-transform-your-brand" href="#">Learn more</a>
         </div>
       </div>
-      <div>
+      <div class="egg-image">
         <img
           src="./assets/imgs/desktop/image-transform.jpg"
           alt="an egg image"

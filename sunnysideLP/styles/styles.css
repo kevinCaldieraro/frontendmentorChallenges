@@ -24,9 +24,6 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  /* font-family: 'Barlow', sans-serif;
-  font-family: 'Fraunces', serif; */
 }
 
 p {
@@ -53,6 +50,20 @@ p {
   padding: 3rem 2.5rem;
   display: flex;
   justify-content: space-between;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger-btn img {
+  width: 35px;
 }
 
 .home-header nav ul {
@@ -108,6 +119,7 @@ p {
   text-align: center;
   margin-top: 70px;
   margin-bottom: 70px;
+  padding: 2rem;
 }
 
 .services {
@@ -188,6 +200,11 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
+}
+
+.services div.other-services.graphic-design,
+.services div.other-services.photography {
+  background-position: center;
 }
 
 .services div.other-services.graphic-design {
